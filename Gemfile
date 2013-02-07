@@ -4,13 +4,16 @@ gem 'rails', '3.2.11'
 gem 'unicorn'
 gem 'rack-raw-upload'
 
+# debugging or other development
 group :development do
   gem 'foreman'
+  gem 'better_errors'
 end
 
+# database
 gem 'pg'
 
-gem 'activeadmin'
+# storage/upload
 gem 'activeadmin-dragonfly', github: 'stefanoverna/activeadmin-dragonfly'
 gem 'rack-cache', :require => 'rack/cache'
 gem 'activeadmin-wysihtml5', github: 'stefanoverna/activeadmin-wysihtml5'
@@ -18,6 +21,10 @@ gem "paperclip", "~> 3.0"
 gem 'aws-sdk', '~> 1.3.4'
 gem "fog", "~> 1.3.1"
 
+# admin/cms
+gem 'activeadmin'
+
+# asset compiling
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'bourbon'
@@ -26,10 +33,17 @@ group :assets do
   gem "asset_sync"
 end
 
+# asset generators
 gem 'jquery-rails'
 gem "rails-backbone"
 
-gem 'better_errors'
+# helpful tools
+
+## debugging
 gem 'awesome_print'
+
+## environment management
 gem 'figaro'
+
+## link helpers
 gem "friendly_id", "~> 4.0.9"

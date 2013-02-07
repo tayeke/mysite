@@ -13,6 +13,9 @@ end
 # database
 gem 'pg'
 
+# admin/cms
+gem 'activeadmin'
+
 # storage/upload
 gem 'activeadmin-dragonfly', github: 'stefanoverna/activeadmin-dragonfly'
 gem 'rack-cache', :require => 'rack/cache'
@@ -20,9 +23,6 @@ gem 'activeadmin-wysihtml5', github: 'stefanoverna/activeadmin-wysihtml5'
 gem "paperclip", "~> 3.0"
 gem 'aws-sdk', '~> 1.3.4'
 gem "fog", "~> 1.3.1"
-
-# admin/cms
-gem 'activeadmin'
 
 # asset compiling
 group :assets do

@@ -8,6 +8,8 @@ gem 'rack-raw-upload'
 group :development do
   gem 'foreman'
   gem 'better_errors'
+  ## environment management
+  gem 'figaro', github: 'laserlemon/figaro'
 end
 
 # database
@@ -41,9 +43,6 @@ gem "rails-backbone"
 
 ## debugging
 gem 'awesome_print'
-
-## environment management
-gem 'figaro', github: 'laserlemon/figaro'
 
 ## link helpers
 gem "friendly_id", "~> 4.0.9"

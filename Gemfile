@@ -43,7 +43,7 @@ gem "rails-backbone"
 gem 'awesome_print'
 
 ## environment management
-gem 'figaro'
+gem 'figaro', github: 'laserlemon/figaro'
 
 ## link helpers
 gem "friendly_id", "~> 4.0.9"
